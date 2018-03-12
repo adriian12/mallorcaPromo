@@ -1,0 +1,111 @@
+body{
+    max-width: 450px;
+    margin: 0 auto;
+}
+
+/*-------------------Rutas programadas-----------------*/
+
+#content{
+    width: 100%;
+    margin: 0 auto;
+    background: url(img/fondo.jpg);
+    font-family: cursive;
+}
+h1 {
+    text-align: center;
+}
+.lugar, .estacion, .actividad, .transporte, .gastronomia {
+    width: 380px;
+    height: 75px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.lugar{
+    background: url("../img/llucmajor.png") no-repeat;
+    background-size: cover;
+
+}
+.estacion{
+    background: url("../img/verano.jpg") no-repeat;
+    background-size: cover;
+}
+.actividad{
+    background: url("../img/canoa.jpg") no-repeat;
+    background-size: cover;
+}
+.transporte{
+    background: url("../img/bus.jpg") no-repeat;
+    background-size: cover;
+}
+.gastronomia{
+    background: url("../img/gastronomia.jpg") no-repeat;
+    background-size: cover;
+}
+
+.resultado{
+    padding-top: 22px;
+    color: black;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+
+/*-------------------Barra de progreso---------------------*/
+
+.progreso {
+    text-align: center;
+}
+
+.progreso label{
+    padding: 0 5px;
+}
+
+#five:checked ~ .progress > .progress-bar {
+	width: 5%;
+	background-color: #f34213;
+}
+
+#twentyfive:checked ~ .progress > .progress-bar {
+	width: 25%;
+	background-color: #f27011;
+}
+
+#fifty:checked ~ .progress > .progress-bar {
+	width: 50%;
+	background-color: #f2b01e;
+}
+
+#seventyfive:checked ~ .progress > .progress-bar {
+	width: 75%;
+	background-color: #f2d31b;
+}
+
+#onehundred:checked ~ .progress > .progress-bar {
+	width: 100%;
+	background-color: #86e01e;
+}
+
+.progress-bar {
+    height: 24px;
+    border-radius: 4px;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+    transition: 0.4s linear;
+    transition-property: width, background-color;
+    box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.25), inset 0 1px rgba(255, 255, 255, 0.1);
+}
+
+.container .progress {
+    margin: 0 auto;
+    width: 400px;
+}
+
+.progress {
+    padding: 0;
+    width: 90%;
+    margin: 0 auto;
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+}
+
+/*-----------------------------------------*/
