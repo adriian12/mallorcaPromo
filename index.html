@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/script.js"></script>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="shortcut icon" href="/favicon.ico" /> 
     <title>Mallorca Promo</title>
@@ -11,26 +13,41 @@
 <body>
     <header>
         <div class="logo">
-            <img class="logoWeb" src="img/logo.png">
+            <img class="logoWeb" src="img/img.png">
         </div>
         <div class="buscador">
             <input type="search">
         </div>
-        <div class="menu" style="display: none">
-            <ul class="burguer">
-                <li>Información general</li>
-                <li>Gastronomia</li>
-                <li>Rutas programadas</li>
-                <li>Configurar rutas</li>
-                <li>Otros</li>
-            </ul>
+        <div class="menu">
+            <div class="hamburger">
+                <div class="_layer -top"></div>
+                <div class="_layer -mid"></div>
+                <div class="_layer -bottom"></div>
+            </div>
+            <nav class="menuppal">
+                <ul>
+                    <li><a href="#">Información general</a></li>
+                    <li><a href="#">Gastronomia</a></li>
+                    <li><a href="#">Rutas programadas</a></li>
+                    <li><a href="#">Configurar rutas</a></li>
+                    <li><a href="#">Otros</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
     <div id="container">
-        <div class="slider">
-                <img class="img" src="img/img1.png">
-                <img class="img" src="img/img2.png">
-                <img class="img" src="img/img3.png">
+        <!-- <img class="img" src="img/img.png">
+        <img class="img" src="img/img.png">
+        <img class="img" src="img/img.png"> -->
+        <div id="slider">
+            <a href="#" class="control_next">a</a>
+            <a href="#" class="control_prev">b</a>
+            <ul>
+                <li><img class="img" src="img/img.png"></li>
+                <li><img class="img" src="img/img.png"></li>
+                <li><img class="img" src="img/img.png"></li>
+                <li><img class="img" src="img/img.png"></li>
+            </ul>  
         </div>
         <div class="texto">
             <h2>Titulo informativo</h2>
@@ -53,10 +70,10 @@
             <p> MALLLORCA PROMO</p>
         </div>
         <div class="social">
-            <a><img src="img/social/facebook.png"></a>
+            <!-- <a><img src="img/social/facebook.png"></a>
             <a><img src="img/social/instragram.png"></a>
             <a><img src="img/social/twitter.png"></a>
-            <a><img src="img/social/youtube.png"></a>
+            <a><img src="img/social/youtube.png"></a> -->
         </div>
     </footer>
 </body>
