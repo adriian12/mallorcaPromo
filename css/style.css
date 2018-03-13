@@ -113,7 +113,7 @@ header{
 }
 .menuppal{
     display: none;
-    background-color: #333333;
+    background-color: aliceblue;
     bottom: 0;
     height: 400px;
     left: 0;
@@ -154,7 +154,7 @@ header{
     width: 100%;
 }
 
-/*-------------------------Slaider----------------------*/
+/*-------------------------Slider----------------------*/
 
 #slider {
     position: relative;
