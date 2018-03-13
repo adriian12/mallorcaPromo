@@ -37,6 +37,7 @@ header{
 }
 .buscador input{
     margin: 20px 0 0 35px;
+    border-radius: 10px;
 }
 
 .menu{
