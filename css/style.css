@@ -1,6 +1,18 @@
+@font-face {
+    font-family: 'Aleo';
+    src: url('../fonts/Aleo-Regular.otf') format("opentype");
+}
+@font-face {
+    font-family: 'AleoBold';
+    font-weight: bold;
+    src: url('../fonts/Aleo-Regular.otf') format("opentype");
+}
+
+
 body{
     max-width: 450px;
     margin: 0 auto;
+    font-family: 'Aleo';
 }
 
 /*-------------------------Header-----------------------------*/
@@ -36,27 +48,26 @@ header{
 }
 
 
-
 /*-----------------------Hamburguesa(Menu)---------------------*/
 
 .hamburger{
-	position:relative;
-    background-color:transparent;
-	left:50px;
-	top:0;
-	height:30px;
-	width:30px;
-	padding:20px 20px;
-	-webkit-transform:translate3d(0, 0, 0);
-	transform:translate3d(0, 0, 0);
-	-webkit-transition:-webkit-transform 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
-	transition:transform 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
-	z-index:1002;
-	cursor:pointer;
-	-webkit-user-select:none;
-	-moz-user-select:none;
-	-ms-user-select:none;
-	user-select:none
+	position: relative;
+    background-color: transparent;
+	left: 75px;
+	top: 0;
+	height: 30px;
+	width: 30px;
+	padding: 20px 20px;
+	-webkit-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+	-webkit-transition: -webkit-transform 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
+	transition: transform 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
+	z-index: 1002;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none
 }
 .hamburger.is-active{
     background-color:none;
@@ -139,6 +150,12 @@ header{
 
 /*-------------------------Container-----------------------------*/
 
+#container{
+    width: 100%;
+}
+
+/*-------------------------Slaider----------------------*/
+
 #slider {
     position: relative;
     overflow: hidden;
@@ -158,7 +175,7 @@ header{
     float: left;
     margin: 0;
     padding: 0;
-    width: 500px;
+    width: 450px;
     height: 300px;
     background: #ccc;
     text-align: center;
@@ -196,16 +213,62 @@ a.control_next {
     border-radius: 2px 0 0 2px;
 }
 
+/*---------------Texto informativo------------------*/
 
+.texto{
+    text-align: center;
+    background-color: mistyrose;
+    padding: 20px;
+}
+.texto h2{
+    text-transform: uppercase;
+}
+.texto p{
 
+}
 
+/*-----------------------Opciones----------------------*/
 
+.opciones{
+    width: 100%;
+    text-align: center;
+}
+.opciones a{
+    width: 80%;
+    text-decoration: none;
+    color: black;
+}
+.opciones a li{
+    list-style: none;
+    width: 80%;
+    height: 40px;
+    background-color: royalblue;
+    margin: 25px auto;
+    padding: 10px;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
 
+/*--------------------------FOOTER--------------------------*/
 
+.copyright{
+    width: 40%;
+    float: left;
+    margin-right: 45px;
+}
+.social{
+    width: 50%;
+    float: left;
+    text-align: center;
+}
+.social a{
 
-
-
-
+}
+.social a img{
+    width: 50px;
+    height: 50px;
+}
 
 
 
