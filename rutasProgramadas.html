@@ -6,18 +6,41 @@
     <title>Rutas Programadas</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/script.js"></script>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="shortcut icon" href="/favicon.ico" />
 </head>
 
 <body>
    <header>
-
+        <div class="logo">
+                <img class="logoWeb" src="img/logo.png">
+            </div>
+            <div class="buscador">
+                <input type="search" placeholder="  Buscar...">
+            </div>
+            <div class="menu">
+                <div class="hamburger">
+                    <div class="_layer -top"></div>
+                    <div class="_layer -mid"></div>
+                    <div class="_layer -bottom"></div>
+                </div>
+                <nav class="menuppal">
+                    <ul>
+                        <li><a href="#">Información general</a></li>
+                        <li><a href="#">Gastronomia</a></li>
+                        <li><a href="rutasProgramadas.html">Rutas programadas</a></li>
+                        <li><a href="#">Configurar rutas</a></li>
+                        <li><a href="#">Otros</a></li>
+                    </ul>
+                </nav>
+            </div>
    </header>
  
    <div id="content">
         <h1>RUTAS PROGRAMADAS</h1>
-        <div class="progreso">
+        <!-- <div class="progreso">
             <input type="radio" class="radio" name="progress" value="five" id="five">
             <label for="five" class="label">5%</label>
             
@@ -36,24 +59,35 @@
             <div class="progress">
                 <div class="progress-bar"></div>
             </div>
-        </div>
-        <div class="lugar">
-            <P class="resultado">LLUCMAJOR</P>
-        </div>
-        <div class="estacion">
-            <P class="resultado">VERANO</P>
-        </div>
-        <div class="actividad">
-            <P class="resultado">CARRERA EN CANOA</P>
-        </div>
-        <div class="transporte">
-            <P class="resultado">AUTOBÚS LINEA 15</P>
-        </div>
-        <div class="gastronomia">
-            <P class="resultado">REST. CA'N TOMÁS</P>
+        </div> -->
+        <div class="rutas">
+            <div class="lugar">
+                <p class="resultado">LLUCMAJOR</p>
+            </div>
+            <div class="estacion">
+                <p class="resultado">VERANO</p>
+            </div>
+            <div class="actividad">
+                <p class="resultado">CARRERA EN CANOA</p>
+            </div>
+            <div class="transporte">
+                <p class="resultado">AUTOBÚS LINEA 15</p>
+            </div>
+            <div class="gastronomia">
+                <p class="resultado">REST. CA'N TOMÁS</p>
+            </div>
         </div>
     </div>
-   <footer>
-   </footer>
+    <footer>
+        <div class="copyright">
+            <p>&copy; MALLLORCA PROMO</p>
+        </div>
+        <div class="social">
+            <a href="https://www.facebook.com/Mallorca-News-601424769951018/"><img src="img/social/facebook.png"></a>
+            <a href="https://www.instagram.com/mallorca/?hl=es"><img src="img/social/instagram.png"></a>
+            <a href="https://twitter.com/visit_mallorca"><img src="img/social/twitter.png"></a>
+            <a href="https://www.youtube.com/user/facebookhipho"><img src="img/social/youtube.png"></a>
+        </div>
+    </footer>
 </body>
 </html>
