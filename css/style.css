@@ -259,6 +259,8 @@ a.control_next {
 /*--------------------------FOOTER--------------------------*/
 footer{
     margin-top: 15px;
+    display: inline-block;
+    width: 100%;
 }
 
 .copyright{
