@@ -296,7 +296,7 @@ footer{
 h1 {
     text-align: center;
 }
-.lugar, .estacion, .actividad, .transporte, .gastronomia {
+.lugar, .estacion, .actividad, .transporte, .bg_gastronomia {
     width: 45%;
     height: 130px;
     /* margin: 0 auto; */
