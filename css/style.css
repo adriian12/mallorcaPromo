@@ -112,10 +112,10 @@ header{
     display: none;
     background-color: aliceblue;
     bottom: 0;
-    height: 400px;
+    height: 420px;
     left: 0;
     position: absolute;
-    top: 400px;
+    top: 420px;
     transform: translate3d(0px, -100%, 0px);
     transition: transform 0.35s cubic-bezier(0.05, 1.04, 0.72, 0.98) 0s;
     width: 100%;
