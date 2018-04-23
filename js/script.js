@@ -53,4 +53,46 @@ $(document).ready(function(){
     $('a.control_next').click(function () {
         moveRight();
     });
+
+/*---------------------------rutas---------------------------*/
+
+    $(function () {
+        $("#datepicker").datepicker();
+    });
+
+    $(".opcionesLugar")
+      .change(function () {
+        var ciudad = this.value;
+        var url = "url('../img/rutas/ciudades/" + ciudad + ".jpg')";
+        $(".opcionesLugar").css("background-image", url);
+    });
+
+    $(".opcionesEstacion")
+      .change(function () {
+        var estacion = this.value;
+        var url = "url('../img/rutas/estaciones/" + estacion + ".jpg')";
+        $(".opcionesEstacion").css("background-image", url);
+    });
+
+    $(".opcionesActividad")
+      .change(function () {
+        var actividades = this.value;
+        var url = "url('../img/rutas/deportes/" + actividades + ".jpg')";
+        $(".opcionesActividad").css("background-image", url);
+    });
+
+    $(".opcionesTransporte")
+      .change(function () {
+        var transportes = this.value;
+        var url = "url('../img/rutas/transportes/" + transportes + ".jpg')";
+        $(".opcionesTransporte").css("background-image", url);
+    });
+
+    $(".opcionesGastronomia")
+      .change(function () {
+        var gastronomia = this.value;
+        var url = "url('../img/rutas/gastronomia/" + gastronomia + ".jpg')";
+        $(".opcionesGastronomia").css("background-image", url);
+    });
+
 });
