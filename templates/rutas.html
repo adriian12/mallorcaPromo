@@ -3,7 +3,7 @@
 <html lang="es">
 
 <head>
-    <title>Rutas</title>
+    <title>Crea tu ruta!</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -30,7 +30,7 @@
                     <ul>
                         <li><a href="index.html">Inicio</a></li>
                         <li><a href="#">Información general</a></li>
-                        <li><a href="#">Gastronomia</a></li>
+                        <li><a href="gastronomia.html">Gastronomía</a></li>
                         <li><a href="rutasProgramadas.html">Rutas programadas</a></li>
                         <li><a href="#">Configurar rutas</a></li>
                         <li><a href="#">Otros</a></li>
@@ -40,67 +40,69 @@
    </header>
 
    <div id="content">
-        <h1>RUTAS PROGRAMADAS</h1>
-        <div class="rutas">
-            <div class="fecha">
-                <input type="date" id="datepicker" value="Fecha de inicio">
+        <h1>CREAR TU RUTA</h1>
+       <form name="form1" method="post" form action="resumen.html" >
+           <div class="rutas">
+                <div class="fecha">
+                    <input type="date" id="datepicker" value="Fecha de inicio">
+                </div>
+                <div class="lugar">
+                    <select class="opcionesLugar">
+                      <option value="cualquiera">Localidad</option>
+                      <option value="palma">Palma</option>
+                      <option value="llucmajor">Llucmajor</option>
+                      <option value="inca">Inca</option>
+                      <option value="arenal">Arenal</option>
+                      <option value="pollensa">Pollença</option>
+                      <option value="alcudia">Alcudia</option>
+                      <option value="campos">Campos</option>
+                      <option value="andratx">Andratx</option>
+                    </select>
+                </div>
+                <div class="estacion">
+                    <select class="opcionesEstacion">
+                      <option value="cualquiera">Estación</option>
+                      <option value="verano">Verano</option>
+                      <option value="primavera">Primavera</option>
+                      <option value="invierno">Invierno</option>
+                      <option value="otono">Otoño</option>
+                    </select>
+                </div>
+                <div class="actividad">
+                    <select class="opcionesActividad">
+                      <option value="cualquiera">Actividad</option>
+                      <option value="baloncesto">Baloncesto</option>
+                      <option value="futbol">Futbol</option>
+                      <option value="golf">Golf</option>
+                      <option value="tennis">Tennis</option>
+                      <option value="padel">Pádel</option>
+                    </select>
+                </div>
+                <div class="transporte">
+                    <select class="opcionesTransporte">
+                      <option value="cualquiera">Transporte</option>
+                      <option value="autobus">Autobús</option>
+                      <option value="taxi">Taxi</option>
+                      <option value="coche">Coche</option>
+                      <option value="bicicleta">Bicicleta</option>
+                    </select>
+                </div>
+                <div class="bg_gastronomia">
+                    <select class="opcionesGastronomia">
+                      <option value="cualquiera">Restaurantes</option>
+                      <option value="tercera">Sa Tercera</option>
+                      <option value="balagan">Balagan</option>
+                      <option value="illes">5illes</option>
+                      <option value="roqueta">Sa Roqueta</option>
+                    </select>
+                </div>
             </div>
-            <div class="lugar">
-                <select class="opcionesLugar">
-                  <option value="cualquiera">Localidad</option>
-                  <option value="palma">Palma</option>
-                  <option value="llucmajor">Llucmajor</option>
-                  <option value="inca">Inca</option>
-                  <option value="arenal">Arenal</option>
-                  <option value="pollensa">Pollença</option>
-                  <option value="alcudia">Alcudia</option>
-                  <option value="campos">Campos</option>
-                  <option value="andratx">Andratx</option>
-                </select>
+            <div class="btn-next">
+                <button id="submit" type="button">
+                    Finalizar
+                </button>
             </div>
-            <div class="estacion">
-                <select class="opcionesEstacion">
-                  <option value="cualquiera">Estación</option>
-                  <option value="verano">Verano</option>
-                  <option value="primavera">Primavera</option>
-                  <option value="invierno">Invierno</option>
-                  <option value="otono">Otoño</option>
-                </select>
-            </div>
-            <div class="actividad">
-                <select class="opcionesActividad">
-                  <option value="cualquiera">Actividad</option>
-                  <option value="baloncesto">Baloncesto</option>
-                  <option value="futbol">Futbol</option>
-                  <option value="golf">Golf</option>
-                  <option value="tennis">Tennis</option>
-                  <option value="padel">Pádel</option>
-                </select>
-            </div>
-            <div class="transporte">
-                <select class="opcionesTransporte">
-                  <option value="cualquiera">Transporte</option>
-                  <option value="autobus">Autobús</option>
-                  <option value="taxi">Taxi</option>
-                  <option value="coche">Coche</option>
-                  <option value="bicicleta">Bicicleta</option>
-                </select>
-            </div>
-            <div class="bg_gastronomia">
-                <select class="opcionesGastronomia">
-                  <option value="cualquiera">Gastronomia</option>
-                  <option value="tercera">Sa Tercera</option>
-                  <option value="balagan">Balagan</option>
-                  <option value="illes">5illes</option>
-                  <option value="roqueta">Sa Roqueta</option>
-                </select>
-            </div>
-        </div>
-        <div class="btn-next">
-            <button id="submit" type="button">
-                Finalizar
-            </button>
-        </div>
+       </form>
     </div>
     <footer>
         <div class="copyright">

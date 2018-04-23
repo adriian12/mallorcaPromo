@@ -312,7 +312,8 @@ h1 {
     float: left;
     margin: 10px;
 }
-.lugarProg, .estacionProg, .actividadProg, .transporteProg, .bg_gastronomiaProg {
+.lugarProg, .estacionProg, .actividadProg, .transporteProg, .bg_gastronomiaProg,
+.restauranteUno, .restauranteDos, .restauranteTres, .restauranteCuatro{
     width: 45%;
     height: 130px;
     text-align: center;
@@ -418,3 +419,25 @@ input[type=date]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
+
+/*-----------------------------------------------
+-------------------GASTRONOMIA-------------------
+-----------------------------------------------*/
+
+.restauranteUno{
+    background: url("../img/rutas/gastronomia/balagan.jpg") no-repeat;
+    background-size: cover;
+}
+.restauranteDos{
+    background: url("../img/rutas/gastronomia/illes.jpg") no-repeat;
+    background-size: cover;
+}
+.restauranteTres{
+    background: url("../img/rutas/gastronomia/roqueta.jpg") no-repeat;
+    background-size: cover;
+}
+.restauranteCuatro{
+    background: url("../img/rutas/gastronomia/tercera.jpg") no-repeat;
+    background-size: cover;
+}
+
