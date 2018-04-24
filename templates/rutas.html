@@ -32,7 +32,7 @@
                         <li><a href="#">Información general</a></li>
                         <li><a href="gastronomia.html">Gastronomía</a></li>
                         <li><a href="rutasProgramadas.html">Rutas programadas</a></li>
-                        <li><a href="#">Configurar rutas</a></li>
+                        <li><a href="rutas.html">Configurar rutas</a></li>
                         <li><a href="#">Otros</a></li>
                     </ul>
                 </nav>
@@ -41,14 +41,14 @@
 
    <div id="content">
         <h1>CREAR TU RUTA</h1>
-       <form name="form1" method="post" form action="resumen.html" >
+       <form name="form1" id='routeForm' method="post" form action="resumen.html" >
            <div class="rutas">
                 <div class="fecha">
-                    <input type="date" id="datepicker" value="Fecha de inicio">
+                    <input type="date" id="datepicker" name='fecha' value="Fecha de inicio">
                 </div>
                 <div class="lugar">
-                    <select class="opcionesLugar">
-                      <option value="cualquiera">Localidad</option>
+                    <select name='lugar' class="opcionesLugar">
+                      <option value="noSeleccionado">Localidad</option>
                       <option value="palma">Palma</option>
                       <option value="llucmajor">Llucmajor</option>
                       <option value="inca">Inca</option>
@@ -60,8 +60,8 @@
                     </select>
                 </div>
                 <div class="estacion">
-                    <select class="opcionesEstacion">
-                      <option value="cualquiera">Estación</option>
+                    <select name='estacion' class="opcionesEstacion">
+                      <option value="noSeleccionado">Estación</option>
                       <option value="verano">Verano</option>
                       <option value="primavera">Primavera</option>
                       <option value="invierno">Invierno</option>
@@ -69,8 +69,8 @@
                     </select>
                 </div>
                 <div class="actividad">
-                    <select class="opcionesActividad">
-                      <option value="cualquiera">Actividad</option>
+                    <select name='actividad' class="opcionesActividad">
+                      <option value="noSeleccionado">Actividad</option>
                       <option value="baloncesto">Baloncesto</option>
                       <option value="futbol">Futbol</option>
                       <option value="golf">Golf</option>
@@ -79,8 +79,8 @@
                     </select>
                 </div>
                 <div class="transporte">
-                    <select class="opcionesTransporte">
-                      <option value="cualquiera">Transporte</option>
+                    <select name='transporte' class="opcionesTransporte">
+                      <option value="noSeleccionado">Transporte</option>
                       <option value="autobus">Autobús</option>
                       <option value="taxi">Taxi</option>
                       <option value="coche">Coche</option>
@@ -88,8 +88,8 @@
                     </select>
                 </div>
                 <div class="bg_gastronomia">
-                    <select class="opcionesGastronomia">
-                      <option value="cualquiera">Restaurantes</option>
+                    <select name='gastronomia' class="opcionesGastronomia">
+                      <option value="noSeleccionado">Restaurantes</option>
                       <option value="tercera">Sa Tercera</option>
                       <option value="balagan">Balagan</option>
                       <option value="illes">5illes</option>
@@ -103,6 +103,17 @@
                 </button>
             </div>
        </form>
+    </div>
+
+    <div id="routeResume">
+        <h1>RESUMEN DE TU RUTA</h1>
+        <p>Has configurado la siguiente ruta:</p>
+        <p>Dia: <span id='spanFecha'></span></p>
+        <p>Localidad: <span id='spanLugar'></span></p>
+        <p>Durante la estación: <span id='spanEstacion'></span></p>
+        <p>Actividad a realizar: <span id='spanActividad'></span></p>
+        <p>Transporte solicitado: <span id='spanTransporte'></span></p>
+        <p>Restaurante reservado: <span id='spanRestaurante'></span></p>
     </div>
     <footer>
         <div class="copyright">

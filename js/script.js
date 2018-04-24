@@ -1,3 +1,4 @@
+
 $(document).ready(function(){
 	$('.hamburger').click(function() {
 		$('.hamburger').toggleClass('is-active');
@@ -8,6 +9,27 @@ $(document).ready(function(){
             $('.menuppal').show(); 
 
 		return false;
+    });
+
+    $('#submit').click(function() {
+        var information = ($('form').serialize()).split('&');
+        var spans = $('#routeResume span*[id]');
+        var valueName, infoData;
+        $.each(spans, function(key, value){
+            valueName = value.id.replace('span', '').toLowerCase();
+
+            $.each(information, function(iKey, infoValue){
+
+                infoData = infoValue.split('=')[1];
+                if(infoValue.indexOf(valueName) != -1){
+                    if(infoData != 'noSeleccionado')
+                        $('#'+value.id).append(infoData);
+                    else
+                        $('#'+value.id).append('No se ha seleccionado valor');
+                }
+            });
+        });
+        $('#routeResume').show();
     });
 
     //---------Slider-----------
