@@ -18,7 +18,7 @@ header{
     width: 100%;
     display: flex;
     position: relative;
-    background-color: #EDE7F6;
+    background-color: #1E1E1E;
 }
 
 .logo{
@@ -28,6 +28,7 @@ header{
 .logo .logoWeb{
     width: 100%;
     height: 75px;
+    padding-left: 10px;
 }
 
 .buscador{
@@ -40,10 +41,6 @@ header{
 
 .menu{
     width: 30%;
-}
-
-.menu .burguer{
-
 }
 
 
@@ -72,7 +69,7 @@ header{
     background-color:none;
 }
 ._layer{
-	background:#333333;
+	background:#FFF;
 	margin-bottom:4px;
 	border-radius:2px;
 	width:28px;
@@ -111,7 +108,7 @@ header{
 }
 .menuppal{
     display: none;
-    background-color: aliceblue;
+    background-color: #505050;
     bottom: 0;
     height: 420px;
     left: 0;
@@ -139,11 +136,11 @@ header{
 }
 .menuppal ul li a{
     text-decoration:none;
-    color:#369;
+    color:#FFF;
 }
 .menuppal ul li a:hover{
     text-decoration:none;
-    color:#333;
+    color:#85DBDF;
 }
 
 /*-------------------------Container-----------------------------*/
@@ -243,7 +240,7 @@ a.control_next {
     list-style: none;
     width: 80%;
     height: 40px;
-    background-color: royalblue;
+    background-color: #203064;
     margin: 25px auto;
     padding: 10px;
     font-size: 20px;
@@ -256,7 +253,7 @@ a.control_next {
     border-radius: 5px;
 }
 .opciones a li:hover{
-    padding: 15px;
+    background-color: #85DBDF;
 }
 
 /*--------------------------FOOTER--------------------------*/
@@ -264,12 +261,16 @@ footer{
     margin-top: 15px;
     display: inline-block;
     width: 100%;
+    background-color: #1E1E1E;
+    padding: 10px 0;
 }
 
 .copyright{
     width: 40%;
     float: left;
     margin-right: 45px;
+    padding-left: 25px;
+    color: #FFF;
 }
 .social{
     width: 50%;
@@ -297,15 +298,15 @@ footer{
 ------------------Rutas programadas-----------------
 ----------------------------------------------------*/
 #routeResume{   
-    width: 90%;
+    width: 430px;
     display: none;
     margin-left: 10%;
-    height: 85%;
-    top: 15%;
+    height: auto;
+    top: 0px;
     margin: 0 auto;
-    background: url(img/fondo.jpg);
+    background-image: url("../img/fondo.jpg");
     font-family: cursive;
-    position: absolute;
+    position: relative;
     background-color: cornflowerblue;
     padding: 10px;
 }
@@ -313,7 +314,6 @@ footer{
 #content{
     width: 100%;
     margin: 0 auto;
-    background: url(img/fondo.jpg);
     font-family: cursive;
 }
 h1 {
@@ -453,4 +453,3 @@ input[type=date]::-webkit-outer-spin-button {
     background: url("../img/rutas/gastronomia/tercera.jpg") no-repeat;
     background-size: cover;
 }
-

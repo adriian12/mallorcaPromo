@@ -30,6 +30,7 @@ $(document).ready(function(){
             });
         });
         $('#routeResume').show();
+        $('#content').hide();
     });
 
     //---------Slider-----------
